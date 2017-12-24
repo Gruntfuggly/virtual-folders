@@ -1,0 +1,66 @@
+{
+	"name": "virtual-folders",
+	"displayName": "Virtual Folders",
+	"description": "Add a custom tree view to show files in virtual folders",
+	"version": "0.0.11",
+	"icon": "resources/virtual-folders.png",
+	"publisher": "Gruntfuggly",
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"repository": "https://github.com/Gruntfuggly/virtual-folders",
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension",
+	"contributes": {
+		"views": {
+			"explorer": [
+				{
+					"id": "virtual-folders",
+					"name": "Virtual Folders",
+					"when": "!virtual-folders-empty"
+				}
+			]
+		},
+		"menus": {
+			"view/title": [
+				{
+					"command": "virtual-folders.refresh",
+					"when": "view == virtual-folders",
+					"group": "navigation"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "virtual-folders.refresh",
+				"title": "Refresh",
+				"category": "virtual-folders",
+				"icon": {
+					"dark": "resources/icons/dark/refresh.svg",
+					"light": "resources/icons/light/refresh.svg"
+				}
+			}
+		],
+		"configuration": {
+			"type": "object",
+			"title": "virtual-folders configuration",
+			"properties": {
+				"virtual-folders.folders": {
+					"type": "array",
+					"description": "Virtual folders",
+					"default": []
+				}
+			}
+		},
+		"scripts": {},
+		"dependencies": {}
+	},
+	"dependencies": {
+		"minimatch": "^3.0.4"
+	}
+}
