@@ -2,7 +2,7 @@
 	"name": "virtual-folders",
 	"displayName": "Virtual Folders",
 	"description": "Add a custom tree view to show files in virtual folders",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"icon": "resources/virtual-folders.png",
 	"publisher": "Gruntfuggly",
 	"engines": {

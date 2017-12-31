@@ -38,19 +38,19 @@ Defines folder names with a list of globs to match files. E.g. for C++ you could
 
 ```
 "virtual-folders.folders":[
-        {
-            "name": "Headers",
-            "files": [
-                "**/*.h"
-            ]
-        },
-        {
-            "name": "Source",
-            "files": [
-                "**/*.cpp"
-            ]
-        }
-    ]
+    {
+        "name": "Headers",
+        "files": [
+            "**/*.h"
+        ]
+    },
+    {
+        "name": "Source",
+        "files": [
+            "**/*.cpp"
+        ]
+    }
+]
 ```
 
 ## Known issues
