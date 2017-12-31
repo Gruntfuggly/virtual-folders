@@ -37,10 +37,7 @@ The extension can be configured as follows:
 Defines folder names with a list of globs to match files. E.g. for C++ you could use:
 
 ```
-"virtual-folders.folders": {
-    "type": "array",
-    "description": "Virtual folders",
-    "default": [
+"virtual-folders.folders":[
         {
             "name": "Headers",
             "files": [
@@ -54,7 +51,6 @@ Defines folder names with a list of globs to match files. E.g. for C++ you could
             ]
         }
     ]
-}
 ```
 
 ## Known issues
